@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= favicon_link_tag '/favicon1.ico' %>
+  <title>The Agnes Anne Agency</title>
+
+  <!-- Custom Javascript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <%= javascript_include_tag 'bootstrap' %>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <%= javascript_include_tag 'classie' %>
+  <%= javascript_include_tag 'agency' %>
+
+  <!-- Standard CSS and Javascript -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Custom CSS -->
+  <%= stylesheet_link_tag 'agency.css' %>
+
+  <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <%= csrf_meta_tags %>
+</head>
+<body id="page-top" class="index">
+
+<%= yield %>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; The Agnes Anne Agency 2015</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/agnesanneagency"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/pages/The-Agnes-Anne-Agency/1456047874724847?sk=timeline"><i class="fa fa-facebook"></i></a>
+          </li>
+          <!-- <li><a href="mailto:contact@agnesanne.com"><i class="fa fa-envelope-o"></i></a>
+          </li> -->
+          <!-- <li><a href="https://www.linkedin.com/company/logitive"><i class="fa fa-linkedin"></i></a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <!-- <li><a href="#">Terms of Use</a>
+          </li> -->
+          <li><a href="/privacypolicy">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
