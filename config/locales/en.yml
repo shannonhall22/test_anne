@@ -21,3 +21,23 @@
 
 en:
   hello: "Hello world"
+
+  activerecord:
+    attributes:
+      contact:
+        name: "Your name"
+        email: "Your e-mail address"
+        phone: "Your phone number"
+        message: "A message"
+    errors:
+      models:
+        contact:
+          attributes:
+            email:
+              blank: "is required"
+            phone:
+              blank: "is required"
+            name:
+              blank: "is required"
+            message:
+              blank: "is required"

@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'simple_form'
+gem 'sucker_punch', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'

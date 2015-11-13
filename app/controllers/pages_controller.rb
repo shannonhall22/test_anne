@@ -10,9 +10,12 @@ class PagesController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
+    if @contact.save
+      ContactMailer.contact_email(@contact).deliver_later
+    end
+
     respond_to do |format|
       if @contact.save
-        ContactMailer.contact_email(@contact).deliver_now
         format.html { redirect_to(root_path(anchor: 'contact'), notice: "E-mail sent successfully." ) }
         format.js { render 'create' }
       else
