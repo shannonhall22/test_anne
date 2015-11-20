@@ -218,6 +218,85 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em
     }
 }
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: transparent
+}
+.navbar-inverse .navbar-brand {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand.active {
+    color: #fec503
+}
+.navbar-inverse .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+.navbar-inverse .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #fed136
+}
+.navbar-inverse .nav li a {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff
+}
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus {
+    color: #fed136;
+    outline: 0
+}
+.navbar-inverse .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136
+}
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #fec503
+}
+@media (min-width: 768px) {
+/*    .navbar-inverse {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }*/
+    .navbar-inverse .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+    .navbar-inverse.navbar-shrink {
+        background-color: #222;
+        padding: 10px 0
+    }
+    .navbar-inverse.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+}
+
+
+
 header {
     background-image: url(http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg);
     background-repeat: none;
