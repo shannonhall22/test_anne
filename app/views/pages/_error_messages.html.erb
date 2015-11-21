@@ -1,5 +1,27 @@
-<ul class="ul-errors">
-  <% @contact.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
-  <% end %>
-</ul>
+<!-- <ul class="ul-errors">
+  <%# @contact.errors.full_messages.each do |msg| %>
+    <%#= if msg contains phone %>
+      <li class="phone"><%#= msg %></li>
+    <%#= elsif msg contains email %>
+      <li class="email"><%#= msg %></li>
+    <%#= elsif msg contains name %>
+      <li class="name"><%#= msg %></li>
+    <%#= elsif msg contains message %>
+      <li class="message"><%#= msg %></li>
+    <%#= end %>
+  <%# end %>
+</ul> -->
+
+
+<% @contact.errors.full_messages.each do |msg| %>
+  <%= if msg contains phone %>
+    <div class="phone"><%= msg %></div>
+  <%= elsif msg contains email %>
+    <div class="email"><%= msg %></div>
+  <%= elsif msg contains name %>
+    <div class="name"><%= msg %></div>
+  <%= elsif msg contains message %>
+    <div class="message"><%= msg %></div>
+  <%= end %>
+<% end %>
+
